@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <title>W3-webfirst</title>
     <link rel=icon href="assets/img/logo.jpg" sizes="16x16" type="image/png">
 </head>
 <body>
     <div class="main">
-        <div class="header">
+        <div id="header" class="header">
             <ul id="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
@@ -29,9 +30,12 @@
                     </ul>
                 </li>
             </ul>
-
+            <!-- search__btn  -->
             <div class="search-btn">
               <i class="ti-search"></i>  
+            </div>
+            <div id="menu-mobile" class="menu__mobile--btn">
+                <i class="ti-menu"></i>
             </div>
         </div>
 
@@ -217,6 +221,29 @@
         })
 
 
+    </script>
+    <!-- menu__btn  -->
+    <script>
+        var  header =   document .getElementById('header');
+        var  mobileMenu  =   document .getElementById('menu-mobile');
+        var headerHeight = header.clientHeight;
+        // đóng mở menu
+        mobileMenu.onclick = function () {
+            var isClose = header.clientHeight === headerHeight ;
+            if (isClose) {
+                header.style.height = 'auto';
+            }else{
+                header.style.height = null;
+            }
+        }
+        // tự đóng khi chọn menu
+        var menuItems = document.querySelectorAll(' #nav li a[href*="#"]');
+        for (var i = 0 ;  i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function () {
+                header.style.height = null;
+            }
+        }
     </script>
 </body>
 </html>
