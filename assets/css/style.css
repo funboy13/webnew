@@ -83,7 +83,6 @@ html{
     right: 0;
     height: 46px;
     background-color: #000;
-    overflow: hidden;
 }
 
 #nav{
@@ -143,6 +142,13 @@ html{
     padding:0 12px;
     line-height: 38px;
 }
+.header .menu__mobile--btn{
+    position: fixed;
+    top:0;
+    right: 0;
+    display:none;
+}
+
 .header .menu__mobile--btn,
 .header .search-btn{
     line-height: 46px;
