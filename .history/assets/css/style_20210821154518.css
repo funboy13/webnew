@@ -340,7 +340,7 @@ html{
     margin-right: 15px;
 }
 .form-submit{
-    text-transform: uppercase;
+    text-decoration: dashed;
 }
 
 .map-section img{
