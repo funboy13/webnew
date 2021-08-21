@@ -48,6 +48,7 @@
         margin-top: 16px;
     }
     .contact-form .form-submit{
-        float: none;
+        margin-right: auto;
+        margin-left: auto;
     }
 }

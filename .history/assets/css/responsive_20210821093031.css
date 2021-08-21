@@ -1,6 +1,5 @@
 /* mobile  */
 @media  (max-width : 740px) {
-    .s-ful-width,
     .s-col-ful{
         width: 100%;
     }
@@ -46,8 +45,5 @@
     }
     .contact-form{
         margin-top: 16px;
-    }
-    .contact-form .form-submit{
-        float: none;
     }
 }

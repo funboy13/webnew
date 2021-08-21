@@ -1,12 +1,5 @@
 /* mobile  */
 @media  (max-width : 740px) {
-    .s-ful-width,
-    .s-col-ful{
-        width: 100%;
-    }
-    .s-mt-8{
-        margin-top: 8px;
-    }
     #nav {
         display: block;
     }
@@ -43,11 +36,5 @@
     }
     #content .menbers-img{
         width:60%;
-    }
-    .contact-form{
-        margin-top: 16px;
-    }
-    .contact-form .form-submit{
-        float: none;
     }
 }
