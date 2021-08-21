@@ -1,5 +1,5 @@
 /* mobile  */
-@media  (max-width : 46.1875em) {
+@media  (max-width : 740px) {
     .s-ful-width,
     .s-col-ful{
         width: 100%;
@@ -51,6 +51,7 @@
         float: none;
     }
     .contact-info{
-        line-height: 2
+        line-height: 2;
+
     }
 }
